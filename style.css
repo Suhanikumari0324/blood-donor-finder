@@ -1,0 +1,263 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f8f8;
+color:#333;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#c1121f;
+color:white;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd6d6;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:70px 8%;
+background:linear-gradient(135deg,#ff4d6d,#c1121f);
+color:white;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:30px;
+}
+
+.search-box{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.search-box input,
+.search-box select{
+padding:14px;
+border:none;
+border-radius:10px;
+width:220px;
+font-size:16px;
+}
+
+.search-box button{
+padding:14px 24px;
+border:none;
+border-radius:10px;
+background:white;
+color:#c1121f;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.search-box button:hover{
+transform:scale(1.05);
+}
+
+.hero-image img{
+width:420px;
+border-radius:25px;
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:25px;
+padding:60px 8%;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:30px;
+width:250px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h2{
+color:#c1121f;
+font-size:38px;
+margin-bottom:10px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin:50px 0;
+color:#c1121f;
+}
+
+.donor-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+padding:0 8% 60px;
+}
+
+.donor-card{
+background:white;
+border-radius:20px;
+padding:25px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.donor-card:hover{
+transform:translateY(-8px);
+}
+
+.donor-card h3{
+color:#c1121f;
+margin-bottom:10px;
+}
+
+.donor-card p{
+margin:8px 0;
+}
+
+.donor-card button{
+margin-top:15px;
+width:100%;
+padding:12px;
+background:#c1121f;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+#register{
+padding:60px 8%;
+background:#fff5f5;
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+form input{
+padding:16px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+form button{
+padding:16px;
+background:#c1121f;
+color:white;
+border:none;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.social{
+margin:20px 0;
+}
+
+.social i{
+font-size:28px;
+margin:0 12px;
+cursor:pointer;
+transition:.3s;
+}
+
+.social i:hover{
+color:#ff4d6d;
+}
+
+.copy{
+margin-top:15px;
+font-size:14px;
+opacity:.8;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero-image img{
+width:100%;
+margin-top:35px;
+}
+
+.search-box{
+justify-content:center;
+}
+
+}

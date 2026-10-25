@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        Blood Donor Finder
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#donors">Donors</a>
+        <a href="#register">Become Donor</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Donate Blood,<br>Save Lives ❤️</h1>
+
+<p>
+Find verified blood donors instantly by selecting blood group and city.
+</p>
+
+<div class="search-box">
+
+<select id="bloodGroup">
+
+<option value="">Blood Group</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+
+</select>
+
+<input
+type="text"
+id="city"
+placeholder="Enter City">
+
+<button onclick="searchDonor()">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=700"
+alt="Blood Donation">
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="card">
+<h2>1200+</h2>
+<p>Registered Donors</p>
+</div>
+
+<div class="card">
+<h2>500+</h2>
+<p>Lives Saved</p>
+</div>
+
+<div class="card">
+<h2>35+</h2>
+<p>Cities Covered</p>
+</div>
+
+</section>
+
+<!-- ================= DONORS ================= -->
+
+<section id="donors">
+
+<h2 class="title">
+Available Donors
+</h2>
+
+<div class="donor-container" id="donorContainer">
+
+<!-- Filled by JavaScript -->
+
+</div>
+
+</section>
+
+<!-- ================= REGISTER ================= -->
+
+<section id="register">
+
+<h2 class="title">
+
+Become A Donor
+
+</h2>
+
+<form id="donorForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="text" placeholder="Blood Group" required>
+
+<input type="text" placeholder="City" required>
+
+<input type="text" placeholder="Phone Number" required>
+
+<button>
+
+Register
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<footer id="contact">
+
+<h2>Blood Donor Finder</h2>
+
+<p>Email : support@blooddonor.com</p>
+
+<p>Phone : +91 9876543210</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+<p class="copy">
+
+© 2026 Blood Donor Finder
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
